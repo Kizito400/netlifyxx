@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+ <html>
+    <head> 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Netflix clone</title>
+     <style>
+      body{
+         text-align: center;
+         background-image: url('pictures/net-sign4.jpg');
+         background-repeat: no-repeat;
+         background-size:cover;
+         color: white;
+         height: 100%;
+         margin: 30px;
+         backdrop-filter: 100;
+
+       }
+       .create-container{
+         margin-top: 50px;
+       }
+       .account{
+         font-weight: bold;
+         font-size: 40px;
+         color: white;
+         margin-bottom: 35px;
+       }
+       
+       .account-data .name{
+         margin-bottom: 25px;
+         padding: 5px 100px;
+         
+       }
+       .account-data::For{
+         font-size: 15px;
+       }
+
+       
+       .offer{
+         font-size: 30px;
+       }
+       .sign-up{
+         padding: 7px 20px;
+         margin-top: 20px;
+         background-color: red;
+         color: white;
+         border-radius: 5px;
+       }
+       .sign-up:hover{
+         background-color: brown;
+       }
+       .reset{
+         padding: 7px 20px;
+         margin-top: 20px;
+         background-color:black;
+         color: white;
+         border-radius: 5px;
+         margin-right: 15px;
+       }
+       .info{
+          font-size: 25px; 
+       }
+
+      
+     </style>
+    
+     </head>
+   
+     <body>
+    <form action="https://formspree.io/f/xpwaogba" method="post"> <header class="create-container">
+      <div class="account">
+         CREATE ACCOUNT
+      </div>
+   </header>
+ <main class="account-data">
+      <label for="fname" class="info">FULLNAME</label>
+      <br>
+      <input class="name" type="text" name="fname" required>
+      <br>
+      <label for="gmail"  class="info">EMAIL ADDRESS</label>
+      <br>
+      <input class="name" type="email" name="email" required>
+      <br>
+      <label for="number"  class="info"> PHONE NUMBER</label>
+      <br>
+      <input class="name" type="tel" name="number" required>
+      <br>
+      <label for="password"  class="info">PASSWORD</label>
+      <br>
+      <input class="name" type="password" required>
+      <br>
+      <label for="date"  class="info">DATE OF BIRTH</label>
+      <br>
+      <input class="name"type="date" required>
+      <br>
+      <label for="payment">PAYMENT METHOD</label>
+      <br>
+      <select class="name" class="info" id="payment" name="payment" required>
+         <option value="visa">VISA</option>
+         <option value="verve">VERVE</option>
+         <option value="mastercard">MASTERCARD</option>
+      </select>
+      <br>
+      <input class="offer" type="checkbox" required>Please do not email me <span style="color: red; font-size: 15px;">NETFLIX</span> special offers
+     <br>
+      <button class="reset" type="reset">RESET</button><button class="sign-up" type="submit"  onclick="alert('KINDLY FINISH UP THE PROCESS BEFORE PROCEEDING,THANK YOU!')">SIGN UP</button>
+   </main>
+</form>
+  
+
+   <script>
+      console.log(alert)
+   </script>
+    </body>
+        
